@@ -28,6 +28,10 @@ public class EmployeeTest {
     public void test2() {
         employeeDao.delete("4");
     }
+    //我是你大爷
+    /*
+    你就是个沙雕
+    */
     @Test
     public void test3() {
         Employee employee = new Employee("1","haha","321654",66,"女");
