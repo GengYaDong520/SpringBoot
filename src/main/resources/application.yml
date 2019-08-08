@@ -1,0 +1,21 @@
+server:
+  port: 80
+  jsp-servlet:
+    init-parameters:
+        development: true
+spring:
+  profiles:
+    active: pord
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    type: org.apache.commons.dbcp.BasicDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/novel
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:com/baizhi/dao/*Mapper.xml
+  type-aliases-package: com.baizhi.entity
